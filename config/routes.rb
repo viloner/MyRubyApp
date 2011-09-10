@@ -1,5 +1,5 @@
 MyRubyApp::Application.routes.draw do
-  get "user/new"
+  resources :users
 
   match '/signup'   => 'user#new'
   match '/contact'  => 'pages#contact'
