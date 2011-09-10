@@ -1,7 +1,7 @@
 MyRubyApp::Application.routes.draw do
   resources :users
 
-  match '/signup'   => 'user#new'
+  match '/signup'   => 'users#new'
   match '/contact'  => 'pages#contact'
   match '/about'    => 'pages#about'
   match '/help'     => 'pages#help'
